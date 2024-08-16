@@ -1,0 +1,29 @@
+/**
+ * v0 by Vercel.
+ * @see https://v0.dev/t/sy8wi6AabfY
+ * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
+ */
+import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button"
+
+export default function Component() {
+  return (
+    <div className="bg-background text-foreground min-h-screen flex flex-col items-center justify-center p-4">
+      <div className="max-w-md w-full space-y-4">
+        <div className="text-center">
+          <h1 className="text-3xl font-bold">Social Media Video Downloader</h1>
+          <p className="text-muted-foreground">Download videos from YouTube, Twitter, Instagram, and more.</p>
+        </div>
+        <form className="grid gap-4">
+          <Input type="text" placeholder="Paste video link here" className="w-full" />
+          <Button type="submit" className="w-full">
+            Download Video
+          </Button>
+        </form>
+        <div className="text-center text-muted-foreground">
+          <p>Simply send the video link to the bot and it will download and send the video back to you.</p>
+        </div>
+      </div>
+    </div>
+  )
+}
